@@ -1,6 +1,7 @@
 __pycache__
 models/
 credentials.yml
+demo.html
 rasa.db
 events.db
 events.db-shm
