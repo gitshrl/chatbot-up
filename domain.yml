@@ -2,27 +2,27 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-  - greet
-  - bot_challenge
-  - name_entry
-  - pmb_pembayaran
-  - test_entry
-  - batch_entry
-  - pmb_informasi_peserta
-  - id_entry
-  - pmb_pelaksanaan_seleksi
-  - city_entry
-  - pmb_beasiswa
-  - pmb_jalur_seleksi
-  - pmb_prodi
-  - edu_entry
+- greet
+- bot_challenge
+- name_entry
+- pmb_pembayaran
+- test_entry
+- batch_entry
+- pmb_informasi_peserta
+- id_entry
+- pmb_pelaksanaan_seleksi
+- city_entry
+- pmb_beasiswa
+- pmb_jalur_seleksi
+- pmb_prodi
+- edu_entry
 entities:
-  - name
-  - test
-  - batch
-  - city
-  - id
-  - program
+- name
+- test
+- batch
+- city
+- id
+- program
 slots:
   name:
     type: text
@@ -44,7 +44,8 @@ slots:
     influence_conversation: false
 responses:
   utter_greet:
-  - text: Halo! Kenalkan saya Lisa. Saya akan membantu kakak dalam proses pendaftaran di Universitas Pertamina.
+  - text: Halo! Kenalkan saya Lisa. Saya akan membantu kakak dalam proses pendaftaran
+      di Universitas Pertamina.
   utter_end_conversation:
   - text: Terima kasih kak {name}. Bila ada pertanyaan, kak {name} dapat menghubungi
       saya kembali:).

@@ -1,14 +1,17 @@
 FROM ubuntu:18.04
 
-ENTRYPOINT []
+WORKDIR /opt/app
 
 RUN apt-get update \
     && apt-get install -y python3.7 python3-pip \
-    && python3 -m pip install --no-cache --upgrade pip \
-    && pip3 install --no-cache rasa==2.1.3 
-    
-ADD . /app/
+    && python3 -m pip install --no-cache --upgrade pip
 
-RUN chmod +x /app/main.sh
+COPY requirements.txt /opt/app/requirements.txt
 
-CMD /app/main.sh
+RUN pip3 install -r requirements.txt
+
+COPY . /opt/app
+
+RUN chmod +x /opt/app/main.sh
+
+CMD /opt/app/main.sh
