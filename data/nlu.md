@@ -26,6 +26,9 @@
 - [Rizal](name)
 
 ## intent:pmb_pembayaran
+- 3
+- 3.
+- tiga
 - pembayaran
 - bayar
 - cara bayar
@@ -53,8 +56,13 @@
 ## intent:batch_entry
 - [januari](batch)
 - [maret](batch)
+- [pertama](batch)
+- [kedua](batch)
 
 ## intent:pmb_informasi_peserta
+- 1
+- 1.
+- satu
 - data diri
 - informasi diri
 - nomer
@@ -66,8 +74,12 @@
 - [105221000](id)
 - [123](id)
 - [000000](id)
+- [12345](id)
 
 ## intent:pmb_pelaksanaan_seleksi
+- 5
+- 5.
+- lima
 - tempat
 - lokasi
 - tempat seleksi
@@ -86,7 +98,13 @@
 - di kota [surabaya](city)
 - kota [surabaya](city)
 
+## intent:address_entry
+- [Jl. Sukamaju](address)
+
 ## intent:pmb_beasiswa
+- 6
+- 6.
+- enam
 - beasiswa
 - scholarship
 - ada beasiswa gak kak?
@@ -94,6 +112,9 @@
 - syarat daftar beasiswa bagaimana kak?
 
 ## intent:pmb_jalur_seleksi
+- 2
+- 2.
+- dua
 - jalur seleksi
 - jalur tes
 - proses seleksi
@@ -102,17 +123,37 @@
 - cara seleksi
 - pilihan seleksi
 - bagimana seleksi nya?
-- bagaimana proses seleksi? 
+- bagaimana proses seleksi?
 
 ## intent:pmb_prodi
+- 4
+- 4.
+- empat
 - prodi
 - jurusan
 - program studi
 - fakultas
 - jurusan apa saja min?
 - program studin apa saja kak?
-- prodi apa saja kak? 
+- prodi apa saja kak?
 
 ## intent:edu_entry
 - [sma](program)
 - [SMA](program)
+- [Sekolah Menengah Atas](program)
+- [smu](program)
+- [SMU](program)
+- [Sekolah Menengah Umum](program)
+
+## intent:solved_entry
+- [ok](solved)
+- [terima kasih](solved)
+- [thanks](solved)
+- [sudah](solved)
+- [tidak masalah](solved)
+- [terima kasih](solved) banyak
+
+## intent:unsolved_entry
+- [belum](unsolved)
+- [ada masalah](unsolved)
+- [tidak](unsolved)
