@@ -1,0 +1,81 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- bot_challenge
+- name_entry
+- pmb_pembayaran
+- test_entry
+- batch_entry
+- pmb_informasi_peserta
+- id_entry
+- pmb_pelaksanaan_seleksi
+- city_entry
+- pmb_beasiswa
+- pmb_jalur_seleksi
+- pmb_prodi
+- edu_entry
+entities:
+- name
+- test
+- batch
+- city
+- id
+- program
+slots:
+  name:
+    type: text
+    influence_conversation: false
+  test:
+    type: text
+    influence_conversation: false
+  batch:
+    type: text
+    influence_conversation: false
+  city:
+    type: text
+    influence_conversation: false
+  id:
+    type: text
+    influence_conversation: false
+  program:
+    type: text
+    influence_conversation: false
+responses:
+  utter_greet:
+  - text: Halo! Kenalkan saya Lisa. Saya akan membantu kakak dalam proses pendaftaran
+      di Universitas Pertamina.
+  utter_end_conversation:
+  - text: Terima kasih kak {name}. Bila ada pertanyaan, kak {name} dapat menghubungi
+      saya kembali:).
+  utter_name_entry:
+  - text: Boleh tau namanya kak?
+  utter_no_peserta:
+  - text: Nomor peserta kak {name} berapa ya?
+  utter_konf_no_peserta:
+  - text: Nomor peserta kak {name} adalah {number}.
+  utter_jenis_ujian:
+  - text: Jenis ujian apa yang kakak ambil?
+  utter_gelombang_seleksi:
+  - text: Gelombang berapa kak?
+  utter_spp_spi:
+  - text: SPP 10.000.000 dan SPI 15.000.000
+  utter_informasi_peserta:
+  - text: Nama kakak adalah {name} dan dan ujiannya akan dilaksanakan di {city}
+  utter_pendidikan_terakhir:
+  - text: Jenjang pendidikan terakhir?
+  utter_program_studi:
+  - text: Ada beberapa program studi yang kakan bisa ambil.
+  utter_pmb_topic:
+  - text: Mau nanya apa kak {name}?
+  utter_kota_seleksi:
+  - text: Kota seleksi dimana kak?
+  utter_alamat_seleksi:
+  - text: Untuk {city} beralamatkan JL. Kusuma Bangsa
+  utter_info_pembayaran:
+  - text: Info mengenai pembayaran bisa cek di sini yaa kak https://universitaspertamina.ac.id/pendaftaran/
+  utter_info_beasiswa:
+  - text: Info mengenai beasiswa bisa cek di sini yaa kak https://universitaspertamina.ac.id/pendaftaran/
+  utter_iamabot:
+  - text: Saya Lisa, saya akan membantu calon mahasiswa baru Universitas Pertamina.
